@@ -1,2 +1,7 @@
+p{
+	display:inline;
+}
+input, select{
+	margin-top:10px;
+}
 
-/* Your CSS Code here. */
