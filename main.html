@@ -10,40 +10,41 @@
 	<!-- the entire body must be written by student -->
 	<form method="post">
 		<label for="name">Name</label>
-		<input id="name" type="text" placeholder="Name">
+		<input id="name" name="name" type="text" placeholder="Name" required>
 		<br>
 		<label for="email">Email</label>
-		<input id="email" type="email" placeholder="Email">
+		<input id="email" name="email" type="email" placeholder="Email" required>
 		<br>
-		<p>Gender</p>
+		<p>Gender: </p>
 		<label for="gender">Male</label>
-		<input id="gender_m" type="radio" name="gender" >
+		<input id="gender_m" type="radio" name="gender" required >
 		<label for="gender">Female</label>
-		<input id="gender_f" type="radio" name="gender">
+		<input id="gender_f" type="radio" name="gender" required>
 		<br>
 		<label for="cars">Car Brands</label>
-		<select id="cars">
-			<option>BMW</option>
-			<option>Audi</option>
-			<option>Tata</option>
+		<select id="cars" name="cars" required>
+			<option value="">--Please choose an option--</option>
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="Tata">Tata</option>
 		</select>
 		<br>
 		<label for="age">Age</label>
-		<input id="age" type="number" placeholder="Age">
+		<input id="age" name="age" type="number" name="age" placeholder="Age" required>
 		<br>
 		<label for="dob">DOB</label>
-		<input id="dob" type="date">
+		<input id="dob" name="dob" type="date"  required>
 		<br>
 		<label for="tel">Phone Number</label>
-		<input id="tel" type="tel" placeholder="xxx-xxx-xxxx">
+		<input id="tel" name="tel" type="tel" placeholder="xxx-xxx-xxxx">
 		<br>
 		<label for="password">Password</label>
-		<input id="password" type="password" placeholder="Password">
+		<input id="password" name="password" type="password" placeholder="Password" required>
 		<br>
 		<label for="tos">I agree to the TOS</label>
-		<input id="tos" type="check">
+		<input id="tos" name="tos" type="check" required>
 		<br>
-		<input type="submit" value="Submit">
+		<button type="submit">Submit</button>
 	</form>
 
 
